@@ -7,7 +7,7 @@
  .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(./banner.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(./worker.jpg);
     
     background-size: cover;
     background-position: center;
@@ -15,12 +15,15 @@
     
 }
 .header h3{
-    font-size: 18px;
+    font-size: 9px;
+    text-align: left;
+    letter-spacing: 1px;
+    
     text-decoration: none;
     color:lightcyan;
     font-style:italic ;
     font-weight: bold;
-    text-shadow: 2px 2px 2px royalblue;
+    text-shadow: 1px 2px 1px royalblue;
     
     letter-spacing: 1px;
     
@@ -72,6 +75,19 @@ nav{
 }
 .text-box h1{
    font-size: 62px; 
+   color: transparent;
+   -webkit-text-stroke: 1px #fff;
+   background: url(./back.png);
+   background-clip: text;
+   -webkit-background-clip: text;
+   color: transparent;
+   background-position: 0 0;
+   animation: back 20s linear infinite;
+}
+@keyframes back{
+   100%{
+       background-position: 2000px 0;
+   }
 }
 .text-box p{
     margin: 10px 0 40px;
@@ -100,33 +116,79 @@ nav{
  .sub-header1 h1{
     text-align: center;
     margin-top: 90px;
-    color:rgba(226, 0, 0, 0.692) ;
+    color:white ;
     font-size: 30px
     
    
  }
+ .sub-header h1{
+    text-align: center;
+    margin-top: 90px;
+    color:white ;
+    font-size: 30px
+    
+   
+ }
+ .sub-header  h3{
+    font-size: 9px;
+    text-align: left;
+    letter-spacing: 1px;
+    list-style: none;
+    
+    text-decoration: none;
+    color:lightcyan;
+    font-style:italic ;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px royalblue;
+    
+    letter-spacing: 1px;
+}
 
 
 @media(max-width:700px){
-    .sub-header1 h3{
-        font-size: 9px;
-        text-align: left;
-        letter-spacing: 1px;
+    
+    .header{
+        min-height: 100vh;
+        width: 100%;
+        background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(./worker.jpg);
         
-        text-decoration: none;
-        color:lightcyan;
-        font-style:italic ;
-        font-weight: bold;
-        text-shadow: 2px 2px 2px royalblue;
+        background-size:contain ;
+        background-position: center;
+        position: relative;
+        background-repeat: no-repeat;
+
         
-        letter-spacing: 1px;
+        
     }
 }
 
     @media(max-width:700px){
-        .sub-header h3{
+        .header  h3{
             font-size: 9px;
             text-align: left;
+            letter-spacing: 1px;
+            list-style: none;
+            
+            text-decoration: none;
+            color:lightcyan;
+            font-style:italic ;
+            font-weight: bold;
+            text-shadow: 2px 2px 2px royalblue;
+            
+            letter-spacing: 1px;
+        }
+        .sub-header  h3{
+            font-size: 9px;
+            text-align: left;
+            letter-spacing: 1px;
+            list-style: none;
+            
+            text-decoration: none;
+            color:lightcyan;
+            font-style:italic ;
+            font-weight: bold;
+            text-shadow: 2px 2px 2px royalblue;
+            
             letter-spacing: 1px;
         }
     
@@ -329,7 +391,7 @@ h3{
     margin: 100px auto;
     width: 80%;
     background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)
-    ),url(./admin.jpg);
+    ),url(./banner.jpg);
     background-position: center;
     background-size:cover ;
     border-radius: 10px;
@@ -371,7 +433,7 @@ h3{
 .sub-header{
     height: 50vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(./aboutus.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(./about.jpg);
     background-position: center;
     background-size: cover;
     
@@ -379,7 +441,7 @@ h3{
 .sub-header1{
     height: 50vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(./service.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(./about.jpg);
     background-position: center;
     background-size: cover;
     
